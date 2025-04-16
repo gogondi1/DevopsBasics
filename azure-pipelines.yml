@@ -9,10 +9,9 @@ trigger:
 pool:
   name: sowjulinux
 
-steps
+steps:
 - task: Maven@4
   inputs:
-    azureSubscription: 'Visual Studio Enterprise Subscription(04be475f-2855-4976-9b18-5b6143c9a5f7)'
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
