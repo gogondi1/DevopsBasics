@@ -20,7 +20,6 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(agent.builddirectory)'
